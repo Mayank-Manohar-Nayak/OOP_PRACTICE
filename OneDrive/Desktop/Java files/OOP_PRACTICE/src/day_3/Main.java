@@ -18,6 +18,7 @@ class Manager extends Employee{
 	void calculateBonus() {
 		bonus = salary*0.2;
 	}
+	@Override
 	void displayInfo() {
 		System.out.println("Name: "+name+"\nSalary: Rs."+salary+"\nBonus: Rs."+bonus);
 	}
@@ -30,6 +31,7 @@ class Developer extends Employee{
 	void calculateBonus() {
 		bonus = salary*0.1;
 	}
+	@Override
 	void displayInfo() {
 		System.out.println("Name: "+name+"\nSalary: Rs."+salary+"\nBonus: Rs."+bonus);
 	}
